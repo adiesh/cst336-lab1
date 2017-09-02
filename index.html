@@ -1,0 +1,148 @@
+<!DOCTYPE html> <!--  (line 1) is required and tells the browser to treat the file as a standard HTML 5  file, -->
+
+
+<html>
+<!-- (lines 4 to 10) Defines a comment
+
+First Website
+and comment
+in html
+(comments can span multiple lines)
+
+-->
+
+<!-- This is the head -->
+<!-- All styles and javascript go inside the head -->
+
+    <!-- 3.2: Update the Head section -->
+    <head> <!-- (line 14) Defines information about the document, such as title, author, etc. -->
+        <!-- Below must be included -->
+        <meta charset = "utf-8" /> <!-- charset: character encoded to be used by browser. utf-8: Unicode-->
+        <title> Andrew Diesh: Personal Website</title>  <!-- <title>: the name of my website will appear on the tab, but the window will still be blank.-->
+        
+        
+        <!-- 4.2: Applying Internal Styles -->
+        
+        <!-- Add the below code within the head section -->
+        <!--
+        <style> 
+            body{
+                background-color: #000066 !important;
+            }
+            
+        </style>
+        
+        -->
+        
+        <!--body: selector rule or whole web page. -->
+        <!-- property: background color. #000066: dark blue color. -->
+        <!-- !important: change the priority for the inline style -->
+        
+        <!-- 4.3: Applying External Styles -->
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+        <link href="styles.css" rel = "stylesheet" type = "text/css" />
+        
+        <!-- link: link the web page with external CSS file. -->
+        <!-- href: specifies path to CSS file. files are case sensitive -->
+        <!-- rel: specifies external file is stylesheet. -->
+        
+    </head>
+<!-- closing head -->
+
+    <!-- This is the body -->
+    <!-- This is where we place the content of our website -->
+    
+    <!-- 3.3: Add the header and navigation within the Body section -->
+
+
+    <body> <!-- (line 23) Defines the document's body -->
+
+        <header> <!-- line 23) defines a semantic section as a header -->
+            <h1> Andrew Diesh </h1> <!--(line 24) defines HTML headings; gets smaller as number gets higher -->
+        </header>
+        <nav> <!-- defines a semantic section as a navigation menu. -->
+            <hr width = "50%" /> <!-- (line 27) defines a thematic change in content; a “line” with a width of 50%. Notice that the <hr /> tag is not expecting any content, so it’s closing itself (there is no </hr> tag) -->
+            
+            <!-- create a hyperlink (when clicking on “Home” it will open the file “index.html”, when clicking on “About” it will open the file “about.html” and so on).-->
+            <a href = "index.html">Home</a>
+            <a href = "about.html">About</a>
+            <a href = "contact.html">Contact</a>
+            
+        </nav>
+        
+        <!-- 3.4: Add an image and content -->>
+        
+        <br /><br /> <!-- (line 33) creates a line break (carriage-return). It doesn’t need a closing tag. -->
+        
+        <main> <!-- (line 35) defines a semantic section in a document that is expected to include the main content -->
+
+            <!-- 4.4.5 Position Content Side by Side -->
+            
+            <figure id = "me">
+                <img src = "Andrew Marathon.jpg"/>
+            </figure>
+            
+            <div id = "welcomeText">
+                Hello! <br />
+                <p>Thank you for visiting my portfolio website.</p> 
+                <p>I am a Network and Security and Data Science student and I'm currently employed at the City of Seaside as an Information Services Technician.</p>
+                <p>Please feel free to contact me.</p>
+            
+            
+            </div> 
+            
+            <div id = "quote">
+                
+                <em>"With ordinary talent and extraordinary <strong>perseverance</strong>, all things are attainable</em><br /> -Thomas F. Buxton
+                
+            </div>
+            <!-- (line 41) defines a container within the document. -->
+                <!-- Hello! <br /> -->
+                <!-- <p>Thank you for visiting my portfolio website.</p> -- ><!-- defines a paragraph. -->
+                
+                <!-- <p>I am a Network and Security and Data Science student and work for the City of Seaside as an Information Services Technician.</p> -->
+                
+                <!-- <p>Please feel free to contact me.</p> -->
+                
+                <br /><br />
+                
+                <!-- <em>"With ordinary talent and extraordinary <strong>perseverance</strong>, all things are attainable</em><br /> -Thomas F. Buxton -->
+                
+                <!-- <em>: defines text, displayed in italics. -->
+                <!-- <strong>: defines strong emphasized text, displayed in bold. -->
+                
+                
+            </div>
+            
+            
+            
+            
+        </main>
+        
+        <!-- This is the footer -->
+        <!-- The footer goes inside the body but not always -->
+        
+        <!-- 3.5: Create a Footer -->
+        <footer> <!-- (line 30) Defines a footer for a document or section, which is optional. -->
+            <hr>
+            CST 336. 2017&copy; Diesh <br /> <!-- &copy: copyright symbol.-->
+            <strong>Disclaimer:</strong> The information in this webpage is fictious. <br />
+            It is used for academic purposes only. 
+            
+            <figure id = "CSUMB_Logo">
+                <img src = "img/csumb_logo.jpg"/> 
+            </figure>
+
+            
+        </footer>
+        <!-- closing footer -->
+        
+        <!-- 4.1: Applying Inline Styles -->
+        <!-- <body style = "background-color: black; color:white"> -->
+        <!-- black background with white text -->
+        
+    </body>
+    <!-- closing body -->
+    
+
+</html>

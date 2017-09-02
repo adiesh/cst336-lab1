@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!-- creating a table -->
+
+<html>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    <link href="styles.css" rel = "stylesheet" type = "text/css" /> <!-- MAKE SURE this is here when working with CSS!!! -->
+    
+    <header> <!-- line 23) defines a semantic section as a header -->
+            <h1> Andrew Diesh </h1> <!--(line 24) defines HTML headings; gets smaller as number gets higher -->
+    </header>
+    <nav> <!-- defines a semantic section as a navigation menu. -->
+        <hr width = "50%" /> <!-- (line 27) defines a thematic change in content; a “line” with a width of 50%. Notice that the <hr /> tag is not expecting any content, so it’s closing itself (there is no </hr> tag) -->
+            
+        <!-- create a hyperlink (when clicking on “Home” it will open the file “index.html”, when clicking on “About” it will open the file “about.html” and so on).-->
+        <a href = "index.html">Home</a>
+        <a href = "about.html">About</a>
+        <a href = "contact.html">Contact</a>
+    </nav>
+    <br /><br />
+   <div id ="content">
+    <!-- create a table to hold experience -->
+        <table>
+            <tr id ="table-header"> 
+                <td><strong>Programming Language</strong></td> <!-- td: individual pieces of data -->
+                <td><strong>Years Experience</strong></td>
+            </tr>
+            <tr class="table-row"> <!-- class is used to style using css. -->
+                <td>Java</td>
+                <td>1</td>
+            </tr>
+            <tr class="table-row">
+                <td>C++</td>
+                <td>3</td>
+            </tr>
+            <tr class="table-row">
+                <td>Python</td>
+                <td>2</td>
+            </tr>
+            <tr class = "table-row">
+                <td>SQLite</td>
+                <td>1</td>
+            </tr>
+            <tr class = "table-row">
+                <td>RStudio</td>
+                <td>1</td>
+            </tr>
+        </table>
+        
+    </div>
+
+  <!-- 5.4: Include interests. -->
+    <ul>
+        <li><span class = "hobby">Video games</span>: Favorite games are Super Smash Bros and Mario Kart.</li>
+        <li><span class = "hobby">Sports</span>: I like to watch/play sports. I enjoy football, basketball, and boxing. I go on runs and swim on my off time.</li>
+        <li><span class = "hobby">Music</span>: I play both Piano and Trumpet for 10+ years. I enjoy listening to classic rock, blues, and old school hip hop.</li>
+        <li><span class = "hobby">Programming</span>: I spend my time learning new languages. I also learn about network configuration at both work and school.</li>
+    </ul>
+    
+
+
+<!-- This is the footer -->
+
+    <footer> <!-- (line 30) Defines a footer for a document or section, which is optional. -->
+        <hr>
+            CST 336. 2017&copy; Diesh <br /> <!-- &copy: copyright symbol.-->
+            <strong>Disclaimer:</strong> The information in this webpage is fictious. <br />
+            It is used for academic purposes only. 
+            
+            <figure id = "CSUMB_Logo">
+                <img src = "csumb_logo.jpg"/> 
+            </figure>
+
+            
+        </footer>
+ 
+    
+</html>
+

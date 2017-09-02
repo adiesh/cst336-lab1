@@ -1,0 +1,103 @@
+/*
+4.3.2: Styling the body of the page.
+*/
+
+h1{
+    font-family: 'Pacifico', cursive;
+    font-size: 4em;
+    margin-bottom: 0px;
+}
+
+
+body{
+    background-color:black;
+    color:gray; /* text is now gray */
+}
+
+/*
+4.3.3: Centering the Content
+*/
+
+header, main, nav, footer, div {
+    text-align: center;
+    
+}
+
+
+
+/* commas allow you to apply same rules to multiple html elements. */
+
+/*
+
+4.4.4: Styling Navigation.
+
+Type the code below to style the navigation menu. Pay attention to the syntax to add comments within CSS.  (In most IDEs, including C9, you can use CTRL + / to add comments).
+
+*/
+
+nav a { /* links within "nav" container */
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.8em;
+    text-decoration: none /* removes underline */
+}
+
+nav a:hover { /* psuedo class: only applies styles going over that element. */
+    border-bottom: 2px orange solid;
+    font-size: 2em;
+    transition: .9s; /* transition effect */
+}
+
+#me, #CSUMB_Logo, #quote, #content{
+    float:none;
+}
+
+#welcome {
+    float: left;
+}
+
+footer { /* add rules to the footer */
+    clear: left;
+    color: red; /* give the font a red color */
+    font-size: 10px
+}
+
+
+/* 5.5: Center our table */
+
+table {
+    margin: 0px auto;
+}
+
+/* 5.6: Make data/text more legible */
+
+td {
+    padding-right: 25px;
+    font-size: 1.3em;
+}
+
+td strong {
+    color: orange;
+}
+
+/* 5.7: class and id attributes for table */
+
+#table-header {
+    background-color: #351a00;
+}
+
+.table-row {
+    background-color: #753900;
+    text-align: left
+}
+
+ul {
+    text-align: left;
+    padding-left: 200px;
+}
+
+.hobby {
+    color: yellow;
+}
+
+
